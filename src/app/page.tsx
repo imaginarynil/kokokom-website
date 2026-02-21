@@ -1,5 +1,6 @@
 import NavBar from "@/app/components/NavBar";
-import { Box, Button, Container, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Text } from "@chakra-ui/react";
+import PricingCard from "./components/PricingCard";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
           <Button variant="subtle">Contact Us</Button>
         </Container>
       </Box>
+      <Flex justifyContent="center" py="1rem">
+        <PricingCard></PricingCard>
+      </Flex>
     </>
   );
 }
